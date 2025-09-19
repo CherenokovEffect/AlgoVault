@@ -2,10 +2,9 @@
 
 using namespace std;
 
-int prefix[200005];
 
-/*
- */
+
+
 
 int main()
 {
