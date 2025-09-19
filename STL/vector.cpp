@@ -41,19 +41,33 @@ int main()
 
     for (auto it : funf)
     {
-        cout << it << " ";
+        cout << it << "\n";
     }
 
-    // Initializing a vector of certain size .
-    vector<int> primes(5) ;
 
-    primes[0] = 2 ;
-    primes[1] = 3 ;
-    primes[2] = 5 ;
-    primes[3] = 7 ;
+    // Initializing a vector of certain size .
+    vector<int> primes(5);
+
+    primes[0] = 2;
+    primes[1] = 3;
+    primes[2] = 5;
+    primes[3] = 7;
     primes[4] = 11;
 
+    for (int i = 0; i < primes.size(); i++)
+    {
+        cout << primes[i] << "\n";
+    }
     // Initializing a vector of certain size along with the initial values for each element .
 
+    vector<int> redundant(10, 5);
 
+    for (int i = 0; i < redundant.size(); i++)
+    {
+        cout << redundant[i] << "\n";
+    }
+
+    // The internal implementation of vector uses an ordinary array . If the size of the vector increases and 
+    // becomes too small , a new array is allocated and all the elements are moved to the new array . However
+    // this does not happen often and average time complexity of push_back is O(1) .
 }
