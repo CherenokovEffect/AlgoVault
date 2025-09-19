@@ -21,17 +21,39 @@ int main()
     {
         cout << v[i] << "\n";
     }
-    
-    // A shorter way to iterate is 
-    for(auto x : v){
-        cout << x << "\n" ;
+
+    // A shorter way to iterate is
+    for (auto x : v)
+    {
+        cout << x << "\n";
     }
 
     // function  back() :- function back returns the last element in the vector .
     // function  pop_back() :- function pop_back removes the last element from the vector .
 
-    cout << v.back() << "\n" ; // 5
-    v.pop_back() ;
-    cout << v.back() << "\n" ; // 2
+    cout << v.back() << "\n"; // 5
+    v.pop_back();
+    cout << v.back() << "\n"; // 2
+
+    // Declaring a vector of five elements
+
+    vector<int> funf = {1, 2, 3, 4, 5};
+
+    for (auto it : funf)
+    {
+        cout << it << " ";
+    }
+
+    // Initializing a vector of certain size .
+    vector<int> primes(5) ;
+
+    primes[0] = 2 ;
+    primes[1] = 3 ;
+    primes[2] = 5 ;
+    primes[3] = 7 ;
+    primes[4] = 11;
+
+    // Initializing a vector of certain size along with the initial values for each element .
+
 
 }
