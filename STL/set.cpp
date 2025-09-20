@@ -84,4 +84,8 @@ int main()
 
     ms.erase(ms.find(5));
     cout << ms.count(5) << "\n";
+
+    // unordered_set
+
+    unordered_set<int> ust ;
 }
